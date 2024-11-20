@@ -121,3 +121,179 @@
 [INFO ] 2024-11-20 11:12:37.710 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
 [INFO ] 2024-11-20 11:12:37.744 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
 [INFO ] 2024-11-20 11:12:37.744 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
+[DEBUG] 2024-11-20 14:03:23.764 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-20 14:03:23.823 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-20 14:03:23.865 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
+[DEBUG] 2024-11-20 14:03:23.865 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
+[DEBUG] 2024-11-20 14:03:23.880 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
+[DEBUG] 2024-11-20 14:03:23.883 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
+[INFO ] 2024-11-20 14:03:23.883 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-20 14:03:23.884 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-20 14:03:23.885 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-20 14:03:23.885 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-20 14:03:23.886 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:03:23.992 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-20 14:03:23.992 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-20 14:03:24.870 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-20 14:03:25.995 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:03:26.006 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:03:26.007 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:03:28.008 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:03:28.021 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:03:28.021 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:03:30.026 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:03:30.043 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:03:30.044 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:03:32.045 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:03:32.066 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:03:34.072 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:03:34.098 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:03:36.099 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:03:36.124 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-20 14:03:36.196 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4724
+[INFO ] 2024-11-20 14:03:46.964 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
+[INFO ] 2024-11-20 14:03:46.970 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : фmдИ(A|ЦЯf)oT&ХKTхаяьbPБjУh
+[DEBUG] 2024-11-20 14:04:16.662 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-20 14:04:16.727 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-20 14:04:16.763 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
+[DEBUG] 2024-11-20 14:04:16.763 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
+[DEBUG] 2024-11-20 14:04:16.786 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4724 already is busy
+[DEBUG] 2024-11-20 14:04:16.786 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4725 is in use
+[DEBUG] 2024-11-20 14:04:16.802 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4725 was set
+[DEBUG] 2024-11-20 14:04:16.806 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4725
+[INFO ] 2024-11-20 14:04:16.806 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-20 14:04:16.807 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-20 14:04:16.810 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-20 14:04:16.810 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-20 14:04:16.812 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:04:16.823 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-20 14:04:16.823 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-20 14:04:17.755 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-20 14:04:18.825 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:04:18.836 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:04:18.836 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:04:20.842 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:04:20.911 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:04:20.912 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:04:22.918 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:04:22.952 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-20 14:04:23.033 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4725
+[INFO ] 2024-11-20 14:04:27.690 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
+[INFO ] 2024-11-20 14:04:27.883 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
+[INFO ] 2024-11-20 14:04:27.966 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
+[INFO ] 2024-11-20 14:04:27.986 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
+[INFO ] 2024-11-20 14:04:27.990 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : ХжчFrРtИЩЦ@ЭyЖ#cЬPАЛнX
+[DEBUG] 2024-11-20 14:04:28.192 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:04:28.778 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::ХжчFrРtИЩЦ@ЭyЖ#cЬPАЛнX  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:28.779 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:29.845 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:04:35.111 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:04:35.158 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::WhmEI667HvGDt  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:35.158 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:35.715 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:04:40.508 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:04:40.537 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::СКЛDQiq.rYFaE  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:40.537 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:41.083 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:04:45.861 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:04:45.904 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::FmdFWtjKLo"]=  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:45.904 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:46.446 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:04:51.259 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:04:51.288 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:51.288 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:51.827 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:04:56.620 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:04:56.650 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::qhuMZobgRDoFWizbptqxnTCuhGWywgWRuADNzFPsHxBGNHLmFql  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:56.650 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:04:57.194 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:05:02.207 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
+[INFO ] 2024-11-20 14:05:02.566 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
+[INFO ] 2024-11-20 14:05:02.843 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
+[INFO ] 2024-11-20 14:05:02.877 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
+[INFO ] 2024-11-20 14:05:02.877 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
+[DEBUG] 2024-11-20 14:09:42.362 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-20 14:09:42.414 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-20 14:09:42.443 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
+[DEBUG] 2024-11-20 14:09:42.443 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
+[DEBUG] 2024-11-20 14:09:42.458 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
+[DEBUG] 2024-11-20 14:09:42.462 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
+[INFO ] 2024-11-20 14:09:42.462 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-20 14:09:42.463 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-20 14:09:42.465 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-20 14:09:42.465 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-20 14:09:42.466 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:09:42.524 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-20 14:09:42.582 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4724
+[INFO ] 2024-11-20 14:09:43.215 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
+[INFO ] 2024-11-20 14:09:43.218 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : ЁCяZYФЗюGrёyuv<uMQЗJлхf
+[DEBUG] 2024-11-20 14:09:59.323 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-20 14:09:59.418 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-20 14:09:59.448 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
+[DEBUG] 2024-11-20 14:09:59.448 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
+[DEBUG] 2024-11-20 14:09:59.465 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
+[DEBUG] 2024-11-20 14:09:59.468 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
+[INFO ] 2024-11-20 14:09:59.468 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-20 14:09:59.469 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-20 14:09:59.473 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-20 14:09:59.473 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-20 14:09:59.474 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:09:59.491 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-20 14:09:59.492 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-20 14:10:00.347 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-20 14:10:01.498 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:10:01.508 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:10:01.508 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:10:03.513 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:10:03.524 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:10:03.524 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:10:05.529 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-20 14:10:05.541 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-20 14:10:05.541 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:10:07.543 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:10:07.565 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:10:09.570 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:10:09.602 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-20 14:10:11.606 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-20 14:10:11.635 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-20 14:10:11.713 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4724
+[INFO ] 2024-11-20 14:10:21.148 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
+[INFO ] 2024-11-20 14:10:21.581 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
+[INFO ] 2024-11-20 14:10:21.680 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
+[INFO ] 2024-11-20 14:10:21.708 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
+[INFO ] 2024-11-20 14:10:21.715 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : ёЕ=д['БckЪuщшvГbC.±FfМZiF:RеoVe}БГрtgGCСмIгёЕс;
+[DEBUG] 2024-11-20 14:10:21.988 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:10:22.761 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::ёЕ=д['БckЪuщшvГbC.±FfМZiF:RеoVe}БГрtgGCСмIгёЕс;  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:22.762 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:23.382 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-20 14:10:24.860 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:10:25.894 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:10:26.482 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::YoRny615czjfe  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:26.483 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:27.312 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-20 14:10:27.917 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:10:28.651 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:10:28.807 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::ВАЮq.YavaQmLH  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:28.808 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:28.920 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-20 14:10:29.604 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:10:30.588 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:10:30.674 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::'TF_GXFRKrNS*  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:30.675 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:31.455 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-20 14:10:32.037 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:10:32.678 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:10:32.749 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:32.750 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:33.469 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-20 14:10:34.085 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:10:34.717 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-20 14:10:34.830 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::kyucaIvFNgYULIahUluprfUiBIEgIOTtgMaEbreUTYkHAQzSVyA  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:34.830 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-20 14:10:35.456 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-20 14:10:36.202 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
+[DEBUG] 2024-11-20 14:10:36.851 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
+[INFO ] 2024-11-20 14:10:37.348 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
+[INFO ] 2024-11-20 14:10:37.774 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
+[INFO ] 2024-11-20 14:10:37.805 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
+[INFO ] 2024-11-20 14:10:37.806 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium

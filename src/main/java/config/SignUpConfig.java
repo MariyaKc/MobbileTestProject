@@ -17,7 +17,19 @@ public interface SignUpConfig extends Config {
     String fieldUsername();
     @Key("fieldPassword")
     String fieldPassword();
+    @Key("buttonLogin")
+    String buttonLogin();
+    @Key("buttonShowPassword")
+    String buttonShowPassword();
+    @Key("labelError")
+    String labelError();
     /** text */
     @Key("titleText")
     String titleText();
+    @Key("labelLoginFieldText")
+    String labelLoginFieldText();
+    @Key("labelPasswordFieldText")
+    String labelPasswordFieldText();
+    @Key("labelButtonLoginText")
+    String labelButtonLoginText();
 }
