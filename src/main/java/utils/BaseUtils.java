@@ -1,35 +1,17 @@
 package utils;
 
+import config.ConfigReader;
+import driver.DriverManager;
+import driver.EmulatorDriver;
+import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j;
 import org.apache.commons.io.IOUtils;
 
 import java.io.*;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 @Log4j
 public class BaseUtils {
-    public static void executeAdbShellCommand(String command){
-            try {
-                ProcessBuilder pb = new ProcessBuilder(command);
-
-                Process process = pb.start(); // Запуск процесса
-                log.info("Эмулятор успешно запущен.");
-            } catch (IOException e) {
-                // Обработка ошибок ввода-вывода (например, файла/команды нет или ошибка запуска)
-                log.error("Ошибка запуска эмулятора. Убедитесь, что путь к ANDROID_HOME верный и эмулятор установлен.", e);
-            } catch (NullPointerException e) {
-                // Обработка ошибок, связанных с отсутствием ANDROID_HOME
-                log.error("Переменная окружения ANDROID_HOME не настроена.", e);
-            } catch (SecurityException e) {
-                // Обработка ошибок, если отсутствуют права на выполнение
-                log.error("Недостаточно прав для запуска эмулятора.", e);
-            } catch (Exception e) {
-                // Ловим любые другие исключения
-                log.error("Произошла неожиданная ошибка при запуске эмулятора.", e);
-            }
-        }
-
     /**
      * Общий метод для создания и запуска процесса с использованием ProcessBuilder.
      * Логирует запускаемую команду, обрабатывает ошибки и обеспечивает контроль завершения процесса.
@@ -56,29 +38,59 @@ public class BaseUtils {
                 log.error("Error reading process error stream.", e);
             }
         }).start();
-       // waitForProcessCompletion(process, 30, TimeUnit.SECONDS);
         return process;
     }
 
-    public static void waitForProcessCompletion(Process process, long timeout, TimeUnit timeUnit) {
-        try {
-            boolean finished = process.waitFor(timeout, timeUnit);
-            if (finished) {
-                int exitCode = process.exitValue();
-                if (exitCode == 0) {
-                    log.info("Process completed successfully.");
-                } else {
-                    log.warn("The process completed with an error. Code: " + exitCode);
+
+    /** METHODS FOR EMULATOR */
+
+    @SneakyThrows
+    public static void startEmulator() {
+        log.info("Start emulator");
+        // Запуск эмулятора с GPU ускорением для отображения на экране
+        startProcess(
+                System.getenv(ConfigReader.EMULATOR_CONFIG.androidHome()) + ConfigReader.EMULATOR_CONFIG.EmulatorPath(),
+                ConfigReader.EMULATOR_CONFIG.avd(),  ConfigReader.EMULATOR_CONFIG.emulatorName(), // Название вашего AVD
+                ConfigReader.EMULATOR_CONFIG.gpu(), ConfigReader.EMULATOR_CONFIG.on() // Включение графического ускорения
+        );
+        log.info("The emulator is running.");
+        waitForEmulatorToBoot();
+    }
+
+    /**
+     * Ожидает завершения загрузки эмулятора, проверяя статус sys.boot_completed.
+     */
+    @SneakyThrows
+    private static void waitForEmulatorToBoot() {
+        log.info("Checking the emulator loading...");
+        boolean bootCompleted = false;
+        while (!bootCompleted) {
+            Process checkBoot = startProcess(
+                    System.getenv(ConfigReader.EMULATOR_CONFIG.androidHome()) + ConfigReader.EMULATOR_CONFIG.adbPath(),
+                    ConfigReader.EMULATOR_CONFIG.shellCommand(),
+                    ConfigReader.EMULATOR_CONFIG.getPropCommand(),
+                    ConfigReader.EMULATOR_CONFIG.bootCompletedProperty());
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(checkBoot.getInputStream()))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    if ("1".equals(line.trim())) {
+                        bootCompleted = true;
+                        break;
+                    }
                 }
-            } else {
-                log.error("The process did not complete within the allotted time.");
-                process.destroy();
             }
-        } catch (InterruptedException e) {
-            log.error("Waiting for the process to complete was interrupted.", e);
-            Thread.currentThread().interrupt();
-            process.destroy();
+            if (!bootCompleted) {
+                log.info("The emulator is loading, check again in 2 seconds...");
+                Thread.sleep(2000);
+            }
         }
+        log.info("The emulator completed loading successfully.");
+    }
+
+    @SneakyThrows
+    public static void stopEmulator()  {
+        executeCommand (ConfigReader.EXECUTOR_CONFIG.killEmulator());
+        log.info("The emulator is closed.");
     }
 
     public static List<String> executeCommandWithGrep(String[] commands, String grepConditions) {
@@ -95,6 +107,48 @@ public class BaseUtils {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static String setAppiumPort() {
+        String port = null;
+        for (String appiumPort : ConfigReader.APP_CONFIG.appiumPorts()) {
+            log.debug("Try to execute command:: check if port " + appiumPort + " is in use");
+            List<String> portOutput;
+            portOutput = BaseUtils.executeCommandWithGrep(ConfigReader.EXECUTOR_CONFIG.portArray(), appiumPort);
+            if ((portOutput.size()) == 0) {
+                port = appiumPort;
+                log.debug("Port " + port + " was set");
+                try {
+                    Runtime.getRuntime().exec(String.format(ConfigReader.EXECUTOR_CONFIG.startAppium(), port));
+                    log.debug("Appium started on port " + port);
+                } catch (IOException e) {
+                    log.error("Appium not started on port " + port + e.getMessage());
+                    e.printStackTrace();
+                }
+                break;
+            } else {
+                log.debug("Port " + appiumPort + " already is busy");
+                if (appiumPort.equals("4731")) {
+                    BaseUtils.executeCommand(ConfigReader.EXECUTOR_CONFIG.killAppium());
+                }
+            }
+        }
+        return port;
+    }
+
+    public static String executeCommandAndGetOutput(String cmd) throws IOException {
+        Process process = Runtime.getRuntime().exec(cmd);
+        java.io.InputStream inputStream = process.getInputStream();
+        java.util.Scanner scanner = new java.util.Scanner(inputStream).useDelimiter("\\A");
+        String value = "";
+        if (scanner.hasNext()) {
+            value = scanner.next();
+        } else {
+            value = "";
+        }
+        inputStream.close();
+        process.destroy();
+        return value.trim();
     }
 
     public static void killProcess(String command) {

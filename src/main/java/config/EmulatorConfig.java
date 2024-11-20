@@ -5,7 +5,7 @@ import org.aeonbits.owner.Config;
 @org.aeonbits.owner.Config.LoadPolicy(org.aeonbits.owner.Config.LoadType.MERGE)
 @org.aeonbits.owner.Config.Sources({
         "system:properties",
-        "file:src/main/java/resources/emulator.properties",
+        "file:src/resources/emulator.properties",
 })
 public interface EmulatorConfig extends Config {
     //path

@@ -21,4 +21,15 @@ public class ConfigReader {
      * Читалка для executor.properties
      */
     public static final ExecutorConfig EXECUTOR_CONFIG = ConfigFactory.create(ExecutorConfig.class, System.getProperties());
+
+    /**
+     * Читалка для constants.properties
+     */
+    public static final ConstantsConfig CONSTANTS_CONFIG = ConfigFactory.create(ConstantsConfig.class, System.getProperties());
+
+
+    /**
+     * Читалка для signup.properties
+     */
+    public static final SignUpConfig SIGN_UP_CONFIG = ConfigFactory.create(SignUpConfig.class, System.getProperties());
 }

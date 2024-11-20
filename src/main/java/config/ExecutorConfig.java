@@ -5,7 +5,7 @@ import org.aeonbits.owner.Config;
 @org.aeonbits.owner.Config.LoadPolicy(org.aeonbits.owner.Config.LoadType.MERGE)
 @org.aeonbits.owner.Config.Sources({
         "system:properties",
-        "file:src/main/java/resources/executor.properties",
+        "file:src/resources/executor.properties",
 })
 public interface ExecutorConfig extends Config {
     /**
@@ -29,6 +29,8 @@ public interface ExecutorConfig extends Config {
     @Key("killAppium")
     String killAppium();
 
+    @Key("killEmulator")
+    String killEmulator();
     @Key("portArray")
     String[] portArray();
 
