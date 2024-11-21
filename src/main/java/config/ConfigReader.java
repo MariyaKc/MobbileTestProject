@@ -34,4 +34,8 @@ public class ConfigReader {
      * Читалка для signup.properties
      */
     public static final SignUpConfig SIGN_UP_CONFIG = ConfigFactory.create(SignUpConfig.class, System.getProperties());
+    /**
+     * Читалка для successSignUp.properties
+     */
+    public static final SuccessSignUpConfig SUCCESS_SIGN_UP_CONFIG = ConfigFactory.create(SuccessSignUpConfig.class, System.getProperties());
 }

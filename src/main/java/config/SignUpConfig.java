@@ -8,13 +8,11 @@ import org.aeonbits.owner.Config;
         "file:src/resources/pages/signup.properties",
 })
 public interface SignUpConfig extends Config {
-    /**
-     * general
-     */
+
     @Key("title")
     String title();
-    @Key("fieldUsername")
-    String fieldUsername();
+    @Key("fieldLogin")
+    String fieldLogin();
     @Key("fieldPassword")
     String fieldPassword();
     @Key("buttonLogin")
@@ -32,4 +30,24 @@ public interface SignUpConfig extends Config {
     String labelPasswordFieldText();
     @Key("labelButtonLoginText")
     String labelButtonLoginText();
+    @Key("errorInvalidDataText")
+    String errorInvalidDataText();
+    @Key("errorUserNotFoundText")
+    String errorUserNotFoundText();
+    /** element name */
+    @Key("elementNameTitle")
+    String elementNameTitle();
+    @Key("elementNameFieldLogin")
+    String elementNameFieldLogin();
+    @Key("elementNameFieldPassword")
+    String elementNameFieldPassword();
+    @Key("elementNameButtonLogin")
+    String elementNameButtonLogin();
+    @Key("elementNameButtonShowPassword")
+    String elementNameButtonShowPassword();
+    @Key("elementNameErrorLoginInvalidValue")
+    String elementNameErrorLoginInvalidValue();
+    @Key("elementNameErrorUserNotFound")
+    String elementNameErrorUserNotFound();
+
 }
