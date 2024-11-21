@@ -12,4 +12,6 @@ public interface SuccessSignUpConfig extends Config {
     String textSuccessSignUpTitle();
     @Key("titleSuccessSignUpX")
     String titleSuccessSignUpX();
+    @Key("elementNameTitleSuccessSignUp")
+    String elementNameTitleSuccessSignUp();
 }

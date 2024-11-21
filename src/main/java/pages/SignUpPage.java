@@ -81,4 +81,45 @@ public class SignUpPage extends AndroidBasePage {
         return this;
     }
 
+   // @Step(Steps.SignUpPage.CLICK_BTN_LOGIN)
+    public SignUpPage clickBtnShowOrHiddenPassword() {
+        clickOnClickableElement($(By.id(preId + ConfigReader.SIGN_UP_CONFIG.buttonShowPassword())), ConfigReader.SIGN_UP_CONFIG.elementNameButtonShowPassword());
+        return this;
+    }
+
+    private SignUpPage verifyPasswordAttributeValue(String value) {
+        verifyAttributeWithValue($(By.id(preId + ConfigReader.SIGN_UP_CONFIG.fieldPassword())),
+                ConfigReader.SIGN_UP_CONFIG.elementNameFieldPassword(),
+                ConfigReader.SIGN_UP_CONFIG.attributePassword(), value);
+        return this;
+    }
+
+    private SignUpPage verifyBtnPasswordAttributeValue(String value) {
+        verifyAttributeWithValue($(By.id(preId + ConfigReader.SIGN_UP_CONFIG.buttonShowPassword())),
+                ConfigReader.SIGN_UP_CONFIG.elementNameButtonShowPassword(),
+                ConfigReader.SIGN_UP_CONFIG.attributeChecked(), value);
+        return this;
+    }
+
+   // @Step(Steps.SignUpPage.CLICK_BTN_LOGIN)
+    public SignUpPage verifyPasswordHidden() {
+        verifyPasswordAttributeValue(ConfigReader.SIGN_UP_CONFIG.trueValue());
+        return this;
+    }
+
+    public SignUpPage verifyPasswordShow() {
+        verifyPasswordAttributeValue(ConfigReader.SIGN_UP_CONFIG.falseValue());
+        return this;
+    }
+
+    public SignUpPage verifyBtnPasswordShow() {
+        verifyBtnPasswordAttributeValue(ConfigReader.SIGN_UP_CONFIG.falseValue());
+        return this;
+    }
+
+    public SignUpPage verifyBtnPasswordHidden() {
+        verifyBtnPasswordAttributeValue(ConfigReader.SIGN_UP_CONFIG.trueValue());
+        return this;
+    }
+
 }

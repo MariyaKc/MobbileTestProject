@@ -1,299 +1,178 @@
-[DEBUG] 2024-11-20 11:00:58.799 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[INFO ] 2024-11-20 11:00:58.805 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 11:00:58.862 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 11:00:58.871 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 11:00:58.872 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 11:00:58.872 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:00:59.124 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[DEBUG] 2024-11-20 11:00:59.206 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 11:00:59.232 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
-[DEBUG] 2024-11-20 11:00:59.235 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
-[INFO ] 2024-11-20 11:00:59.236 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:46) - Url is: http://127.0.0.1:4723
-[DEBUG] 2024-11-20 11:04:40.473 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[INFO ] 2024-11-20 11:04:40.479 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 11:04:40.543 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 11:04:40.554 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 11:04:40.554 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 11:04:40.555 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:04:40.806 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
-[INFO ] 2024-11-20 11:04:40.807 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[ERROR] 2024-11-20 11:04:41.558 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
-[INFO ] 2024-11-20 11:04:42.813 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:04:42.824 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:04:42.824 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:04:44.827 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:04:44.839 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:04:44.839 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:04:46.842 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:04:46.858 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:04:46.858 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:04:48.860 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:04:48.888 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:04:50.893 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:04:50.925 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:04:52.933 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:04:52.963 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[DEBUG] 2024-11-20 11:04:53.082 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 11:04:53.121 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
-[DEBUG] 2024-11-20 11:04:53.126 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
-[INFO ] 2024-11-20 11:04:53.127 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:46) - Url is: http://127.0.0.1:4723
-[DEBUG] 2024-11-20 11:05:17.799 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[INFO ] 2024-11-20 11:05:17.805 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 11:05:17.858 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 11:05:17.868 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 11:05:17.868 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 11:05:17.869 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:05:17.915 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[DEBUG] 2024-11-20 11:05:17.975 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 11:05:17.997 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
-[DEBUG] 2024-11-20 11:05:17.997 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
-[DEBUG] 2024-11-20 11:05:18.015 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
-[DEBUG] 2024-11-20 11:05:18.018 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
-[INFO ] 2024-11-20 11:05:18.019 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:46) - Url is: http://127.0.0.1:4724
-[DEBUG] 2024-11-20 11:09:11.738 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 11:09:11.784 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 11:09:11.813 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
-[DEBUG] 2024-11-20 11:09:11.817 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
-[INFO ] 2024-11-20 11:09:11.818 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 11:09:11.818 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 11:09:11.821 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 11:09:11.821 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 11:09:11.822 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:09:11.866 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 11:09:11.912 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:47) - Url is: http://127.0.0.1:4723
-[DEBUG] 2024-11-20 11:09:35.901 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 11:09:35.972 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 11:09:36.001 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
-[DEBUG] 2024-11-20 11:09:36.004 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
-[INFO ] 2024-11-20 11:09:36.005 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 11:09:36.006 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 11:09:36.011 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 11:09:36.011 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 11:09:36.012 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:09:36.024 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
-[INFO ] 2024-11-20 11:09:36.024 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[ERROR] 2024-11-20 11:09:36.886 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
-[INFO ] 2024-11-20 11:09:38.025 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:09:38.037 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:09:38.037 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:09:40.053 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:09:40.113 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:09:40.116 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:09:42.144 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:09:42.190 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 11:09:42.260 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:47) - Url is: http://127.0.0.1:4723
-[INFO ] 2024-11-20 11:09:47.557 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
-[INFO ] 2024-11-20 11:09:47.804 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:69) - after activate RUNNING_IN_FOREGROUND
-[INFO ] 2024-11-20 11:09:47.896 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:79) - The application is running.
-[DEBUG] 2024-11-20 11:09:48.087 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 11:09:48.735 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
-[INFO ] 2024-11-20 11:09:49.076 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:102) - The application was successfully removed
-[INFO ] 2024-11-20 11:09:49.399 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
-[INFO ] 2024-11-20 11:09:49.427 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
-[INFO ] 2024-11-20 11:09:49.428 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
-[DEBUG] 2024-11-20 11:12:19.585 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 11:12:19.645 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 11:12:19.684 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
-[DEBUG] 2024-11-20 11:12:19.687 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
-[INFO ] 2024-11-20 11:12:19.687 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 11:12:19.688 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 11:12:19.690 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 11:12:19.690 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 11:12:19.691 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:12:19.706 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
-[INFO ] 2024-11-20 11:12:19.707 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[ERROR] 2024-11-20 11:12:20.686 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
-[INFO ] 2024-11-20 11:12:21.712 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:12:21.727 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:12:21.727 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:12:23.743 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 11:12:23.756 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 11:12:23.756 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 11:12:25.797 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 11:12:25.835 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 11:12:25.906 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4723
-[INFO ] 2024-11-20 11:12:36.054 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
-[INFO ] 2024-11-20 11:12:36.382 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
-[INFO ] 2024-11-20 11:12:36.496 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
-[DEBUG] 2024-11-20 11:12:36.885 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 11:12:37.049 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
-[INFO ] 2024-11-20 11:12:37.367 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
-[INFO ] 2024-11-20 11:12:37.710 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
-[INFO ] 2024-11-20 11:12:37.744 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
-[INFO ] 2024-11-20 11:12:37.744 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
-[DEBUG] 2024-11-20 14:03:23.764 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 14:03:23.823 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 14:03:23.865 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
-[DEBUG] 2024-11-20 14:03:23.865 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
-[DEBUG] 2024-11-20 14:03:23.880 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
-[DEBUG] 2024-11-20 14:03:23.883 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
-[INFO ] 2024-11-20 14:03:23.883 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 14:03:23.884 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 14:03:23.885 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 14:03:23.885 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 14:03:23.886 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:03:23.992 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
-[INFO ] 2024-11-20 14:03:23.992 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[ERROR] 2024-11-20 14:03:24.870 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
-[INFO ] 2024-11-20 14:03:25.995 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:03:26.006 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:03:26.007 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:03:28.008 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:03:28.021 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:03:28.021 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:03:30.026 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:03:30.043 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:03:30.044 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:03:32.045 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:03:32.066 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:03:34.072 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:03:34.098 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:03:36.099 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:03:36.124 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 14:03:36.196 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4724
-[INFO ] 2024-11-20 14:03:46.964 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
-[INFO ] 2024-11-20 14:03:46.970 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : фmдИ(A|ЦЯf)oT&ХKTхаяьbPБjУh
-[DEBUG] 2024-11-20 14:04:16.662 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 14:04:16.727 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 14:04:16.763 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
-[DEBUG] 2024-11-20 14:04:16.763 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
-[DEBUG] 2024-11-20 14:04:16.786 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4724 already is busy
-[DEBUG] 2024-11-20 14:04:16.786 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4725 is in use
-[DEBUG] 2024-11-20 14:04:16.802 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4725 was set
-[DEBUG] 2024-11-20 14:04:16.806 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4725
-[INFO ] 2024-11-20 14:04:16.806 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 14:04:16.807 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 14:04:16.810 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 14:04:16.810 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 14:04:16.812 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:04:16.823 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
-[INFO ] 2024-11-20 14:04:16.823 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[ERROR] 2024-11-20 14:04:17.755 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
-[INFO ] 2024-11-20 14:04:18.825 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:04:18.836 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:04:18.836 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:04:20.842 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:04:20.911 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:04:20.912 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:04:22.918 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:04:22.952 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 14:04:23.033 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4725
-[INFO ] 2024-11-20 14:04:27.690 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
-[INFO ] 2024-11-20 14:04:27.883 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
-[INFO ] 2024-11-20 14:04:27.966 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
-[INFO ] 2024-11-20 14:04:27.986 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
-[INFO ] 2024-11-20 14:04:27.990 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : ХжчFrРtИЩЦ@ЭyЖ#cЬPАЛнX
-[DEBUG] 2024-11-20 14:04:28.192 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:04:28.778 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::ХжчFrРtИЩЦ@ЭyЖ#cЬPАЛнX  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:28.779 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:29.845 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:04:35.111 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:04:35.158 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::WhmEI667HvGDt  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:35.158 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:35.715 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:04:40.508 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:04:40.537 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::СКЛDQiq.rYFaE  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:40.537 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:41.083 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:04:45.861 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:04:45.904 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::FmdFWtjKLo"]=  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:45.904 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:46.446 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:04:51.259 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:04:51.288 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:51.288 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:51.827 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:04:56.620 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:04:56.650 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:47) -  Send keys::qhuMZobgRDoFWizbptqxnTCuhGWywgWRuADNzFPsHxBGNHLmFql  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:56.650 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:42) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:04:57.194 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:05:02.207 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
-[INFO ] 2024-11-20 14:05:02.566 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
-[INFO ] 2024-11-20 14:05:02.843 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
-[INFO ] 2024-11-20 14:05:02.877 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
-[INFO ] 2024-11-20 14:05:02.877 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
-[DEBUG] 2024-11-20 14:09:42.362 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 14:09:42.414 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 14:09:42.443 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
-[DEBUG] 2024-11-20 14:09:42.443 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
-[DEBUG] 2024-11-20 14:09:42.458 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
-[DEBUG] 2024-11-20 14:09:42.462 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
-[INFO ] 2024-11-20 14:09:42.462 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 14:09:42.463 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 14:09:42.465 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 14:09:42.465 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 14:09:42.466 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:09:42.524 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 14:09:42.582 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4724
-[INFO ] 2024-11-20 14:09:43.215 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
-[INFO ] 2024-11-20 14:09:43.218 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : ЁCяZYФЗюGrёyuv<uMQЗJлхf
-[DEBUG] 2024-11-20 14:09:59.323 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
-[DEBUG] 2024-11-20 14:09:59.418 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
-[DEBUG] 2024-11-20 14:09:59.448 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
-[DEBUG] 2024-11-20 14:09:59.448 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
-[DEBUG] 2024-11-20 14:09:59.465 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
-[DEBUG] 2024-11-20 14:09:59.468 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
-[INFO ] 2024-11-20 14:09:59.468 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
-[INFO ] 2024-11-20 14:09:59.469 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
-[INFO ] 2024-11-20 14:09:59.473 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
-[INFO ] 2024-11-20 14:09:59.473 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
-[INFO ] 2024-11-20 14:09:59.474 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:09:59.491 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
-[INFO ] 2024-11-20 14:09:59.492 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[ERROR] 2024-11-20 14:10:00.347 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
-[INFO ] 2024-11-20 14:10:01.498 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:10:01.508 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:10:01.508 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:10:03.513 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:10:03.524 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:10:03.524 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:10:05.529 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[ERROR] 2024-11-20 14:10:05.541 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
-[INFO ] 2024-11-20 14:10:05.541 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:10:07.543 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:10:07.565 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:10:09.570 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:10:09.602 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
-[INFO ] 2024-11-20 14:10:11.606 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
-[INFO ] 2024-11-20 14:10:11.635 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
-[INFO ] 2024-11-20 14:10:11.713 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4724
-[INFO ] 2024-11-20 14:10:21.148 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
-[INFO ] 2024-11-20 14:10:21.581 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
-[INFO ] 2024-11-20 14:10:21.680 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
-[INFO ] 2024-11-20 14:10:21.708 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:47) - Start generate random login data
-[INFO ] 2024-11-20 14:10:21.715 [main] utils.RandomManager.generateInvalidLoginRandomString(RandomManager.java:60) - Random invalid login is : ёЕ=д['БckЪuщшvГbC.±FfМZiF:RеoVe}БГрtgGCСмIгёЕс;
-[DEBUG] 2024-11-20 14:10:21.988 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:10:22.761 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::ёЕ=д['БckЪuщшvГbC.±FfМZiF:RеoVe}БГрtgGCСмIгёЕс;  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:22.762 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:23.382 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
-[DEBUG] 2024-11-20 14:10:24.860 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:10:25.894 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:10:26.482 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::YoRny615czjfe  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:26.483 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:27.312 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
-[DEBUG] 2024-11-20 14:10:27.917 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:10:28.651 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:10:28.807 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::ВАЮq.YavaQmLH  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:28.808 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:28.920 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
-[DEBUG] 2024-11-20 14:10:29.604 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:10:30.588 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:10:30.674 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::'TF_GXFRKrNS*  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:30.675 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:31.455 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
-[DEBUG] 2024-11-20 14:10:32.037 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:10:32.678 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:10:32.749 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:32.750 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:33.469 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
-[DEBUG] 2024-11-20 14:10:34.085 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:10:34.717 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: TITLE  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
-[DEBUG] 2024-11-20 14:10:34.830 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:48) -  Send keys::kyucaIvFNgYULIahUluprfUiBIEgIOTtgMaEbreUTYkHAQzSVyA  to the element:: fieldUsr  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:34.830 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:43) -  Verify then element:: fieldUsr  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
-[DEBUG] 2024-11-20 14:10:35.456 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:54) -  Verify then element::  btn  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
-[DEBUG] 2024-11-20 14:10:36.202 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:36) -  Verify then visible element:: errorlogin  contains exact text:: Введены неверные данные  Element locator is::  {By.id: com.alfabank.qapp:id/tvError}
-[DEBUG] 2024-11-20 14:10:36.851 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
-[INFO ] 2024-11-20 14:10:37.348 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
-[INFO ] 2024-11-20 14:10:37.774 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
-[INFO ] 2024-11-20 14:10:37.805 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
-[INFO ] 2024-11-20 14:10:37.806 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
+[DEBUG] 2024-11-21 14:25:38.177 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-21 14:25:38.236 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-21 14:25:38.275 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:130) - Port 4723 already is busy
+[DEBUG] 2024-11-21 14:25:38.275 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4724 is in use
+[DEBUG] 2024-11-21 14:25:38.293 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4724 was set
+[DEBUG] 2024-11-21 14:25:38.296 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4724
+[INFO ] 2024-11-21 14:25:38.296 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-21 14:25:38.297 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-21 14:25:38.299 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-21 14:25:38.299 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-21 14:25:38.300 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:25:48.191 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: error: closed
+[INFO ] 2024-11-21 14:25:48.191 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:25:50.202 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:25:50.235 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:25:50.236 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:25:52.246 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:25:52.275 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:25:52.276 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:25:54.283 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:25:54.311 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:25:54.312 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:25:56.319 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:25:56.347 [Thread-5] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:25:56.347 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:25:58.355 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:25:58.387 [Thread-6] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:25:58.387 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:00.394 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:00.422 [Thread-7] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:26:00.423 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:02.431 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:02.458 [Thread-8] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:26:02.458 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:04.465 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:04.492 [Thread-9] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:26:04.493 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:06.497 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:06.520 [Thread-10] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:26:06.521 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[DEBUG] 2024-11-21 14:26:10.419 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-21 14:26:10.512 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-21 14:26:10.550 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
+[DEBUG] 2024-11-21 14:26:10.556 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
+[INFO ] 2024-11-21 14:26:10.556 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-21 14:26:10.557 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-21 14:26:10.559 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-21 14:26:10.559 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-21 14:26:10.560 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:10.571 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 14:26:10.573 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-21 14:26:11.741 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-21 14:26:12.575 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:12.594 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 14:26:12.595 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:14.599 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:14.631 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 14:26:14.632 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:16.638 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 14:26:16.651 [Thread-4] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 14:26:16.652 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:18.653 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-21 14:26:18.690 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:20.699 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-21 14:26:20.730 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:22.739 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-21 14:26:22.792 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 14:26:24.800 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-21 14:26:24.842 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-21 14:26:24.942 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4723
+[INFO ] 2024-11-21 14:26:33.171 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
+[INFO ] 2024-11-21 14:26:33.540 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
+[INFO ] 2024-11-21 14:26:33.649 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
+[DEBUG] 2024-11-21 14:26:34.247 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: Title (SignUp page)  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-21 14:26:35.467 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:63) -  Send keys::Password  to the element:: FieldPassword (SignUp page)  Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 14:26:35.468 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:58) -  Verify then element:: FieldPassword (SignUp page)  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 14:26:36.075 [main] baseObjects.AndroidBasePage.verifyAttributeWithValue(AndroidBasePage.java:80) -  Verify then element::  FieldPassword (SignUp page) exists and has attribute:: password  with attribute value:: true  Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 14:26:37.649 [main] baseObjects.AndroidBasePage.verifyAttributeWithValue(AndroidBasePage.java:80) -  Verify then element::  ButtonShowPassword (SignUp page) exists and has attribute:: checked  with attribute value:: false  Element locator is:: {By.id: com.alfabank.qapp:id/text_input_end_icon}
+[DEBUG] 2024-11-21 14:26:37.810 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: Title (SignUp page)  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-21 14:26:37.927 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:69) -  Verify then element::  ButtonShowPassword (SignUp page)  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/text_input_end_icon}
+[DEBUG] 2024-11-21 14:26:38.132 [main] baseObjects.AndroidBasePage.verifyAttributeWithValue(AndroidBasePage.java:80) -  Verify then element::  FieldPassword (SignUp page) exists and has attribute:: password  with attribute value:: false  Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 14:26:38.788 [main] baseObjects.AndroidBasePage.verifyAttributeWithValue(AndroidBasePage.java:80) -  Verify then element::  ButtonShowPassword (SignUp page) exists and has attribute:: checked  with attribute value:: true  Element locator is:: {By.id: com.alfabank.qapp:id/text_input_end_icon}
+[DEBUG] 2024-11-21 14:26:38.905 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
+[INFO ] 2024-11-21 14:26:39.501 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
+[INFO ] 2024-11-21 14:26:39.979 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
+[INFO ] 2024-11-21 14:26:40.026 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
+[INFO ] 2024-11-21 14:26:40.026 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
+[DEBUG] 2024-11-21 15:06:57.781 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-21 15:06:57.839 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-21 15:06:57.869 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
+[DEBUG] 2024-11-21 15:06:57.872 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
+[INFO ] 2024-11-21 15:06:57.872 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-21 15:06:57.873 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-21 15:06:57.875 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-21 15:06:57.875 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-21 15:06:57.876 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:06:57.888 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 15:06:57.888 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-21 15:06:59.003 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-21 15:06:59.894 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:06:59.907 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 15:06:59.908 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 15:07:01.917 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:07:02.915 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 15:07:02.915 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[DEBUG] 2024-11-21 15:07:10.429 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-21 15:07:10.509 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-21 15:07:10.542 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
+[DEBUG] 2024-11-21 15:07:10.546 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
+[INFO ] 2024-11-21 15:07:10.546 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-21 15:07:10.551 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-21 15:07:10.554 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-21 15:07:10.554 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-21 15:07:10.554 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:07:10.567 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 15:07:10.567 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-21 15:07:11.529 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-21 15:07:12.574 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:07:12.586 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 15:07:12.587 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 15:07:14.607 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:07:14.637 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 15:07:14.641 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 15:07:16.650 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-21 15:07:16.695 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-21 15:07:16.814 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4723
+[INFO ] 2024-11-21 15:07:22.924 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
+[INFO ] 2024-11-21 15:07:23.274 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
+[INFO ] 2024-11-21 15:07:23.399 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
+[DEBUG] 2024-11-21 15:07:23.901 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: Title (SignUp page)  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-21 15:07:24.613 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:63) -  Send keys::Login  to the element:: FieldLogin (SignUp page)  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-21 15:07:24.613 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:58) -  Verify then element:: FieldLogin (SignUp page)  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-21 15:07:25.190 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:63) -  Send keys::Password  to the element:: FieldPassword (SignUp page)  Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 15:07:25.190 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:58) -  Verify then element:: FieldPassword (SignUp page)  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 15:07:26.239 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:69) -  Verify then element::  ButtonLogin (SignUp page)  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-21 15:07:26.828 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: TitleSuccessSignUp (SuccessSignUp Page)  contains exact text:: Вход в Alfa-Test выполнен  Element locator is::  {By.xpath: //android.widget.TextView[@text="Вход в Alfa-Test выполнен"]}
+[DEBUG] 2024-11-21 15:07:29.560 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
+[INFO ] 2024-11-21 15:07:29.932 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
+[INFO ] 2024-11-21 15:07:30.150 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
+[INFO ] 2024-11-21 15:07:30.184 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
+[INFO ] 2024-11-21 15:07:30.185 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium
+[DEBUG] 2024-11-21 15:16:12.203 [main] BaseTest.initDrivers(BaseTest.java:17) - BEFORE SUITE
+[DEBUG] 2024-11-21 15:16:12.251 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:115) - Try to execute command:: check if port 4723 is in use
+[DEBUG] 2024-11-21 15:16:12.280 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:120) - Port 4723 was set
+[DEBUG] 2024-11-21 15:16:12.284 [main] utils.BaseUtils.setAppiumPort(BaseUtils.java:123) - Appium started on port 4723
+[INFO ] 2024-11-21 15:16:12.284 [main] utils.BaseUtils.startEmulator(BaseUtils.java:49) - Start emulator
+[INFO ] 2024-11-21 15:16:12.284 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/emulator/emulator -avd EmulatorForAlpha -gpu on
+[INFO ] 2024-11-21 15:16:12.286 [main] utils.BaseUtils.startEmulator(BaseUtils.java:56) - The emulator is running.
+[INFO ] 2024-11-21 15:16:12.287 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:65) - Checking the emulator loading...
+[INFO ] 2024-11-21 15:16:12.287 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:16:12.298 [Thread-1] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: no devices/emulators found
+[INFO ] 2024-11-21 15:16:12.299 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[ERROR] 2024-11-21 15:16:13.397 [Thread-0] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: initialize: Supports id properties, got a vulkan device UUID
+[INFO ] 2024-11-21 15:16:14.308 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:16:14.334 [Thread-2] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 15:16:14.336 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 15:16:16.349 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[ERROR] 2024-11-21 15:16:16.391 [Thread-3] utils.BaseUtils.lambda$startProcess$0(BaseUtils.java:35) - Process error: adb: device offline
+[INFO ] 2024-11-21 15:16:16.391 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:83) - The emulator is loading, check again in 2 seconds...
+[INFO ] 2024-11-21 15:16:18.402 [main] utils.BaseUtils.startProcess(BaseUtils.java:25) - Running a command: /Users/mariya/Library/Android/sdk/platform-tools/adb shell getprop sys.boot_completed
+[INFO ] 2024-11-21 15:16:18.458 [main] utils.BaseUtils.waitForEmulatorToBoot(BaseUtils.java:87) - The emulator completed loading successfully.
+[INFO ] 2024-11-21 15:16:18.665 [main] driver.EmulatorDriver.getUrl(EmulatorDriver.java:45) - Url is: http://127.0.0.1:4723
+[INFO ] 2024-11-21 15:16:22.777 [main] driver.EmulatorDriver.<init>(EmulatorDriver.java:22) - Driver initialized successfully.
+[INFO ] 2024-11-21 15:16:22.995 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:67) - after activate RUNNING_IN_FOREGROUND
+[INFO ] 2024-11-21 15:16:23.068 [main] driver.EmulatorDriver.launchApp(EmulatorDriver.java:77) - The application is running.
+[DEBUG] 2024-11-21 15:16:23.479 [main] baseObjects.AndroidBasePage.verifyVisibleElementContainsText(AndroidBasePage.java:35) -  Verify then visible element:: Title (SignUp page)  contains exact text:: Вход в Alfa-Test  Element locator is::  {By.id: com.alfabank.qapp:id/tvTitle}
+[DEBUG] 2024-11-21 15:16:24.077 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:63) -  Send keys::Login  to the element:: FieldLogin (SignUp page)  Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-21 15:16:24.077 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:58) -  Verify then element:: FieldLogin (SignUp page)  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etUsername}
+[DEBUG] 2024-11-21 15:16:24.649 [main] baseObjects.AndroidBasePage.sendKeys(AndroidBasePage.java:63) -  Send keys::Password  to the element:: FieldPassword (SignUp page)  Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 15:16:24.650 [main] baseObjects.AndroidBasePage.verifyEnableOfElement(AndroidBasePage.java:58) -  Verify then element:: FieldPassword (SignUp page)  is enabled. Element locator is:: {By.id: com.alfabank.qapp:id/etPassword}
+[DEBUG] 2024-11-21 15:16:26.219 [main] baseObjects.AndroidBasePage.clickOnClickableElement(AndroidBasePage.java:69) -  Verify then element::  ButtonLogin (SignUp page)  is clickable and click. Element locator is:: {By.id: com.alfabank.qapp:id/btnConfirm}
+[DEBUG] 2024-11-21 15:16:26.818 [main] baseObjects.AndroidBasePage.verifyVisibleOfElement(AndroidBasePage.java:29) -  Verify then element:: TitleSuccessSignUp (SuccessSignUp Page)  is visible. Element locator is:: {By.xpath: //android.widget.TextView[@text="Вход в Alfa-Test выполнен"]}
+[DEBUG] 2024-11-21 15:16:29.430 [main] baseObjects.AndroidBasePage.isElementContainsText(AndroidBasePage.java:88) -  Verify then enable element:: TitleSuccessSignUp (SuccessSignUp Page)  contains exact text:: Вход в Alfa-Test выполнен  Element is::  {By.xpath: //android.widget.TextView[@text="Вход в Alfa-Test выполнен"]}
+[DEBUG] 2024-11-21 15:16:29.541 [main] BaseTest.close(BaseTest.java:28) - AFTER SUITE
+[INFO ] 2024-11-21 15:16:29.850 [main] driver.EmulatorDriver.removeApp(EmulatorDriver.java:100) - The application was successfully removed
+[INFO ] 2024-11-21 15:16:30.231 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: adb emu kill
+[INFO ] 2024-11-21 15:16:30.264 [main] utils.BaseUtils.stopEmulator(BaseUtils.java:93) - The emulator is closed.
+[INFO ] 2024-11-21 15:16:30.264 [main] utils.BaseUtils.executeCommand(BaseUtils.java:167) - Start execute command: pkill -9 -f appium

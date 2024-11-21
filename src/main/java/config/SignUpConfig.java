@@ -34,6 +34,15 @@ public interface SignUpConfig extends Config {
     String errorInvalidDataText();
     @Key("errorUserNotFoundText")
     String errorUserNotFoundText();
+    /** attribute */
+    @Key("attributePassword")
+    String attributePassword();
+    @Key("attributeChecked")
+    String attributeChecked();
+    @Key("falseValue")
+    String falseValue();
+    @Key("trueValue")
+    String trueValue();
     /** element name */
     @Key("elementNameTitle")
     String elementNameTitle();

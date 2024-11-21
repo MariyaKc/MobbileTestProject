@@ -10,8 +10,7 @@ import lombok.extern.log4j.Log4j;
 import java.time.Duration;
 
 
-import static com.codeborne.selenide.Condition.clickable;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$$;
 import static java.time.Duration.ofSeconds;
 
@@ -74,6 +73,25 @@ public abstract class AndroidBasePage  {
     public boolean isNotExistElement(SelenideElement element, String elementName) {
         log.debug(" Verify then element:: " + elementName + " is not exist in DOM. Element locator is:: " + element);
         return element.has(Condition.not(Condition.exist));
+    }
+
+   // @Description(Descriptions.SelenideBasePage.VERIFY_ATTRIBUTE)
+    public void verifyAttributeWithValue(SelenideElement element, String elementName, String attribute, String expectedAttributeValue) {
+        log.debug(" Verify then element::  " + elementName + " exists and has attribute:: " + attribute +
+                "  with attribute value:: " + expectedAttributeValue + "  Element locator is:: " + element);
+        element.should(Condition.exist, Duration.ofSeconds(10))
+                .shouldHave(attributeMatching(attribute, expectedAttributeValue));
+    }
+
+    //@Description(Descriptions.SelenideBasePage.IS_ELEMENT_CONTAINS_TEXT)
+    public boolean isElementContainsText(SelenideElement element, String elementName, String text) {
+        log.debug(" Verify then enable element:: " + elementName + "  contains exact text:: " + text +
+                "  Element is::  " + element);
+        if (element.exists()) {
+            return element.getText().trim().equals(text);
+        } else {
+            return false;
+        }
     }
 
     }

@@ -4,6 +4,7 @@ import org.testng.annotations.DataProvider;
 import pages.SignUpPage;
 import lombok.extern.log4j.Log4j;
 import org.testng.annotations.Test;
+import pages.SuccessSignUpPage;
 import utils.Steps;
 
 import static utils.SignUpDataProvider.invalidLoginProvider;
@@ -44,5 +45,30 @@ public class TestSignUp extends BaseTest {
         assert new SignUpPage(DriverManager.getEmulatorDriver().getDriver()).waitPageOpen()
                 .sendKeysLogin(login).sendKeysPassword("Password").clickBtnLogin()
                 .isNotExistError(): "The is error after try login with valid but not existence data";
+    }
+
+    @Test(priority = 3)
+    public void verifyHiddenPasswordTest() {
+        new SignUpPage(DriverManager.getEmulatorDriver().getDriver()).waitPageOpen()
+                .sendKeysPassword(ConfigReader.CREDENTIALS_CONFIG.password())
+                .verifyPasswordHidden().verifyBtnPasswordShow();
+    }
+
+    @Test(priority = 4, dependsOnMethods = "verifyHiddenPasswordTest")
+    public void verifyShowPasswordTest() {
+        new SignUpPage(DriverManager.getEmulatorDriver().getDriver()).waitPageOpen()
+                .clickBtnShowOrHiddenPassword()
+                .verifyPasswordShow().verifyBtnPasswordHidden();
+    }
+
+    @Test(priority = 5)
+    public void successLoginTest() {
+        new SignUpPage(DriverManager.getEmulatorDriver().getDriver()).waitPageOpen()
+                .sendKeysLogin(ConfigReader.CREDENTIALS_CONFIG.login())
+                .sendKeysPassword(ConfigReader.CREDENTIALS_CONFIG.password())
+                .clickBtnLogin();
+        new SuccessSignUpPage(DriverManager.getEmulatorDriver().getDriver())
+                .waitPageOpen()
+                .isPageOpen();
     }
 }

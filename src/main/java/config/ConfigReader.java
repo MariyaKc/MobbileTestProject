@@ -31,6 +31,10 @@ public class ConfigReader {
      */
     public static final  TestDataConfig TEST_DATA_CONFIG = ConfigFactory.create(TestDataConfig.class, System.getProperties());
     /**
+     * Читалка для constants.properties
+     */
+    public static final CredentialsConfig CREDENTIALS_CONFIG = ConfigFactory.create(CredentialsConfig.class, System.getProperties());
+    /**
      * Читалка для signup.properties
      */
     public static final SignUpConfig SIGN_UP_CONFIG = ConfigFactory.create(SignUpConfig.class, System.getProperties());
